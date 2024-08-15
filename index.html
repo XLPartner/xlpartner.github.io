@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <title>XLP</title>
+    <!-- bootstap css link  -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- fonts css link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="static/css/css2.css" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <!-- media-query css link -->
+    <link rel="stylesheet" href="static/css/media-query.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+    <!-- coustom css link -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar p-0  navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <div class="logo">
+                        <a class="navbar-brand p-0 m-0" href="">
+                            <img src="static/picture/logo.png" style="width: 100px;height:auto;" alt="logo.png">
+                        </a>
+                    </div>
+                    <div class="cta-btn">
+                        <a id="download-link" href="static/paper/XLP-WhitePaper.pdf" download="XLP-WhitePaper.pdf"
+                           onclick="handleDownloadClick(event)">White Paper</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero-section section-p banner">
+        <div class="container">
+            <div class="row">
+                <div class="hero-section-text col-12 col-lg-8  text-center text-lg-start  ms-hero banner-content">
+                    <h1 class="m-0 white-color">
+                        Easiest way to transfer,
+                        sell & exchange crypto coins
+                    </h1>
+                    <p class="gray-color">
+                        Xlpartner is a unique DeFi protocol with an innovative algorithm that simplifies the traditional
+                        process of adding liquidity. By transferring BNB into the contract, users purchase LP tokens,
+                        and by transferring XLP into the contract, they sell LP tokens. This protocol aims to address
+                        the pain points of previous DeFi projects through technological innovation, creating a fully
+                        decentralized DeFi financial system.
+                    </p>
+                    <h3 class="m-0 white-color">
+                        Contract
+                    </h3>
+                    <p class="contract_text" style="overflow: hidden;color:red;">
+                        0xdb8be74d71ddf41adcd46539bf87dcf999999999
+                    </p>
+                    <button type="button" class="col-8  col-lg-4 cta-btn" onclick="copyContract()">Copy Contract
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--how it section start-->
+    <section class="how-it-works section-p overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>
+                        Token Distribution
+                    </h2>
+                    <div class="title-design">
+                        <img src="static/picture/title-design.svg" alt="title-design.svg">
+                    </div>
+                </div>
+                <div class="carousel-box">
+                    <div class="slider-box">
+                        <div class="how-work-carousel" id="how-work-carousel">
+                            <div class="slide">
+                                <div class="inner-box">
+                                    <h4 class="seconday-color">Open Source</h4>
+                                    <div class="text gray-color">The project is fully open-source and decentralized,
+                                        with no management control. It undergoes AVE contract auditing to ensure
+                                        enhanced security and transparency.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-box">
+                                    <h4 class="seconday-color">Token Supply and Pool</h4>
+                                    <div class="text gray-color">
+                                        XLP has a total supply of 21 million tokens with a 10 BNB pool at launch. There
+                                        are no reserves, ensuring a fair start. The LP pool undergoes a blackhole burn
+                                        before launch to maintain fairness.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-box">
+                                    <h4 class="seconday-color">Daily Token Management</h4>
+                                    <div class="text gray-color">
+                                        The BNB pool burns 0.72% of tokens daily and distributes 0.48% as LP rewards
+                                        every 3 seconds. This approach helps maintain token scarcity, stabilize the
+                                        market, prevent inflation, and reward long-term holders.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-box">
+                                    <h4 class="seconday-color">Deposit and Reward</h4>
+                                    <div class="text gray-color">Initially, each deposit into the contract is capped at
+                                        0.2 BNB, but multiple deposits are allowed from the same address. When the pool
+                                        hits 50 BNB, LP rewards are automatically enabled and the deposit limit is
+                                        lifted.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-box">
+                                    <h4 class="seconday-color">Team Building</h4>
+                                    <div class="text gray-color">The global ranking system organizes LP purchases, with
+                                        positions assigned based on entry order. Users quickly secure a spot in a team
+                                        of 20, even without additional promotional activities.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how it section end -->
+
+
+    <!-- sale section start -->
+    <section id="sale" class="section-p sale">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>
+                        Contract partner
+                    </h2>
+                </div>
+                <div class="sale-content-text d-flex flex-wrap gap-4 gap-md-5 gap-xl-0  justify-content-between">
+                    <div class="col-md-12 col-xl-12  col-xxl-12">
+                        <div class="sale-content-1 text-center white-color">
+                            <div class="timer d-flex flex-wrap row-gap-3 column-gap-5 row-gap-md-0 column-gap-md-0 align-items-center justify-content-center justify-content-md-between">
+                                <div class="price-target d-flex align-items-center justify-content-center col-xl-5 col-md-2 mt-3 mt-xl-5
+                                        gap-4">
+                                    <div class="price-btn">
+                                        <a class="seconday-color">Binance</a>
+                                    </div>
+                                </div>
+                                <div class=" price-target d-flex align-items-center justify-content-center col-xl-5 col-md-2 mt-3 mt-xl-5
+                                        gap-4">
+                                    <div class="price-btn">
+                                        <a class="seconday-color">Ave.ai</a>
+                                    </div>
+                                </div>
+                                <div class=" price-target d-flex align-items-center justify-content-center col-xl-5 col-md-2 mt-3 mt-xl-5
+                                        gap-4">
+                                    <div class="price-btn">
+                                        <a class="seconday-color">PancakeSwap</a>
+                                    </div>
+                                </div>
+                                <div class=" price-target d-flex align-items-center justify-content-center col-xl-5 col-md-2 mt-3 mt-xl-5
+                                        gap-4">
+                                    <div class="price-btn">
+                                        <a class="seconday-color">Bee Wallet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sale section end -->
+
+    <!-- faq section start -->
+    <section class="section-p faq">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>
+                        Guide and Advantage
+                    </h2>
+                    <div class="title-design">
+                        <img src="static/picture/title-design.svg" alt="title-design.svg">
+                    </div>
+                </div>
+                <div class="col-xxl-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <div class="accordion-header d-flex flex-row-reverse gap-4">
+                                <button class="accordion-button bg-transparent p-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    How can I add a Liquidity Provider (LP)?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-0 mt-4 gray-color">
+                                    <p>The XLP contract leverages technological innovation to streamline liquidity
+                                        provision. By depositing BNB into the XLP contract, you will automatically
+                                        receive LP tokens.</p>
+                                    <p>For instance, when a user deposits 1 BNB into the contract, it automatically
+                                        allocates 0.5 BNB to purchase tokens from the pool and uses the remaining 0.5
+                                        BNB to add liquidity, generating LP tokens that are sent directly to the user’s
+                                        wallet. This automation saves users the time and effort of manually adding
+                                        liquidity. Once the LP tokens are received, users can begin earning mining
+                                        rewards instantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 my-md-5">
+                            <div class="accordion-header d-flex flex-row-reverse gap-4">
+                                <button class="accordion-button bg-transparent  p-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    Benefits for LP Users
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-0 mt-4 gray-color">
+                                    <p><strong>Continuous Real-Time Rewards:</strong>LP users earn real-time rewards
+                                        indefinitely. XLP tokens received as rewards can be sold anytime. As the token
+                                        price increases daily, the value of holdings grows over time.</p>
+                                    <p><strong>Unlimited Value Appreciation:</strong>LP investments appreciate as token
+                                        prices rise. For example, if an LP initially holds 1 BNB in XLP, the value of
+                                        this LP can grow to 10 BNB or more as the token price increases.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 my-md-5">
+                            <div class="accordion-header d-flex flex-row-reverse gap-4">
+                                <button class="accordion-button bg-transparent  p-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    Pancake Dual-Pool Mechanism
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-0 mt-4 gray-color">
+                                    <p><strong>BNB/XLP Pool:</strong> Purchase XLP by depositing BNB. Withdrawals return
+                                        BNB only. XLP rewards are distributed in real-time. To convert XLP rewards to
+                                        BNB, deposit them into the contract.</p>
+                                    <p><strong>USDT/XLP Pool:</strong> Freely buy and sell XLP. The USDT pool price will
+                                        always be higher than the BNB pool price. If the USDT pool price falls below the
+                                        BNB pool price, users can buy XLP at a lower price in the USDT pool and sell it
+                                        in the BNB pool for arbitrage or hold for a dual win.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 my-md-5">
+                            <div class="accordion-header d-flex flex-row-reverse gap-4">
+                                <button class="accordion-button bg-transparent  p-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    Will selling mined tokens into the BNB pool cause a price drop or death spiral?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-0 mt-4 gray-color">
+                                    <p><strong>The BNB pool burns 0.72% of the total tokens daily and distributes 0.48%
+                                        of the total tokens as rewards to LP users. Even if all rewards are sold into
+                                        the BNB pool, the token price is not only stable but tends to rise.</strong></p>
+
+                                    <div class="example">
+                                        <p><strong>For example, with a base pool of 100,000 tokens and 100,000 USDT, if
+                                            the token price is 1 USDT:</strong></p>
+                                        <ul>
+                                            <li>The daily burn of 0.72% plus 0.48% for LP rewards results in a 1.2%
+                                                reduction in the total token supply.
+                                            </li>
+                                            <li>The remaining pool (98,800 tokens + 100,000 USDT) has a new price of
+                                                1.012 USDT per token, reflecting a 1.2% increase.
+                                            </li>
+                                        </ul>
+
+                                        <p><strong>When LP rewards amounting to 0.48% (480 tokens) are sold into the
+                                            pool:</strong></p>
+                                        <ul>
+                                            <li>The pool’s total token amount becomes (98,800 + 480) = 99,280 tokens.
+                                            </li>
+                                            <li>The USDT amount adjusts to (100,000 - 480 * 1.012) = 99,514 USDT.</li>
+                                            <li>This results in the pool’s token price being 1.002 USDT per token.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="conclusion">
+                                        <p><strong>Conclusion:</strong> Even in extreme scenarios where no new funds are
+                                            added, selling LP rewards does not decrease the token price but rather
+                                            causes it to rise. Additionally, with incoming funds, the price increases
+                                            even more rapidly. This effectively prevents the death spiral typically seen
+                                            in DeFi projects due to falling token prices.</p>
+
+                                        <p><strong>USDT pool operates as a secondary market with free trading. The XLP
+                                            token price will always be higher than the BNB pool price. LP rewards can be
+                                            sold into the USDT pool, ensuring that the BNB pool's token price rises
+                                            daily by at least 1.2%, with potentially even faster increases due to new
+                                            investments.</strong></p>
+
+                                        <p><strong>In extreme cases where the USDT pool price falls below the BNB pool
+                                            price, users can buy tokens at a lower price in the USDT pool. The price
+                                            will quickly surpass the BNB pool price, allowing users to arbitrage and
+                                            hold tokens long-term. The BNB pool’s rising price will drive the USDT pool
+                                            price higher, creating a perfect synergy between the primary market and
+                                            secondary market. The dual-pool system ensures that the BNB pool
+                                            continuously supports and protects the secondary market while providing a
+                                            strong shield for users, establishing a robust dual-pool
+                                            interaction.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="partner" class="section-p our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 mb-1 title text-center">
+                    <h2>
+                        Get In Touch
+                    </h2>
+                    <div class="title-design">
+                        <img src="static/picture/title-design.svg" alt="title-design.svg">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 our-team-content">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4 mb-md-3 mb-1 mt-4">
+                            <div class="our-team-1 team-w m-auto m-sm-0  team-hover text-center">
+                                <div class="our-team-content-text position-relative z-1 d-inline-block">
+                                    <h5>
+                                        X / Twitter
+                                    </h5>
+                                    <a href="https://x.com/xlpartner">https://x.com/xlpartner</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 mb-md-3 mb-1 mt-4">
+                            <div class="our-team-1 team-w m-auto m-sm-0  team-hover text-center">
+                                <div class="our-team-content-text position-relative z-1 d-inline-block">
+                                    <h5>
+                                        Telegram
+                                    </h5>
+                                    <span>
+                                    <a href="https://t.me/XLP_BNB2024">https://t.me/XLP_BNB2024</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 mb-md-3 mb-1 mt-4">
+                            <div class="our-team-1 team-w m-auto m-sm-0  team-hover text-center">
+                                <div class="our-team-content-text position-relative z-1 d-inline-block">
+                                    <h5>
+                                        Bee Wallet
+                                    </h5>
+                                    <span>
+                                         <a href="https://beewallet.io/">group_0x4cc6647d26</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div id="notification" class="notification">Copy Successful!</div>
+<footer id="footer" class="footer-wrapper">
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="copy-text">
+                        <p>Copyright &copy; 2024.XLP
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="social-icon">
+                        <a href="https://x.com/xlpartner"><i class="fa-brands fa-x-twitter icon-hover"></i></a>
+                        <a href="https://t.me/XLP_BNB2024"><i class="fa-brands fa-telegram icon-hover"></i></a>
+                        <a href="https://beewallet.io/"><i class="fa-solid fa-wallet icon-hover"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- bootstrap js link -->
+<script src="static/js/bootstrap.bundle.min.js"></script>
+
+<!-- js link -->
+<script src="static/js/jquery-3.7.1.min.js"></script>
+
+<script src="static/js/bxslider.js"></script>
+
+<script src="static/js/owl.js"></script>
+
+
+<script src="static/js/custom-script.js"></script>
+
+</body>
+
+</html>
