@@ -14,7 +14,7 @@ if ($('.how-work-carousel').length) {
 }
 
 function copyContract() {
-    var textToCopy = "0xdb8be74d71ddf41adcd46539bf87dcf999999999";
+    var textToCopy = "0x3681D063F47F7230EE3F59A35A2873DAAAAAAAAA";
 
     // 使用 Clipboard API 复制文本到剪贴板
     navigator.clipboard.writeText(textToCopy).then(function () {
